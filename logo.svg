@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+  <defs>
+    <mask id="aerostat-cutout">
+      <rect width="36" height="36" fill="black" />
+      <path d="M18 3 L32 31 H23 L18 21 L13 31 H4 L18 3 Z" fill="white" />
+      <path d="M18 12 L23 24 H13 L18 12 Z" fill="black" />
+    </mask>
+  </defs>
+  <rect width="36" height="36" fill="#56c7e4" mask="url(#aerostat-cutout)" />
+</svg>

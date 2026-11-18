@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AeroStat · The status page you host yourself</title>
+  <meta name="description" content="AeroStat is an open-source, self-hosted status page. It checks your websites, APIs, servers and DNS, shows their uptime and lets you post incidents and maintenance.">
+  <meta name="theme-color" content="#111317">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://aerostatus.nl/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aerostatus.nl/">
+  <meta property="og:title" content="AeroStat · The status page you host yourself">
+  <meta property="og:description" content="Open-source, self-hosted status page with uptime monitoring, incidents and maintenance.">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="hero">
+    <a class="brand" href="/" aria-label="AeroStat home">
+      <img src="/logo.svg" alt="" width="36" height="36">
+      <span>AeroStat</span>
+    </a>
+
+    <h1>The status page you <span class="keep"><span class="highlight">host yourself</span>.</span></h1>
+
+    <p class="lead">
+      AeroStat checks your websites, APIs, servers and DNS, shows visitors how they are doing, and lets you post
+      incidents and planned maintenance from a small admin panel. Open source, and running on your own server
+      with Docker in a few minutes.
+    </p>
+
+    <nav class="actions" aria-label="Get started">
+      <a class="button primary" href="https://status.hampternom.nl" target="_blank" rel="noopener">
+        Live demo
+        <svg class="external" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9v4H3V5h4"/></svg>
+      </a>
+      <a class="button" href="https://docs.aerostatus.nl">Docs</a>
+      <a class="button" href="https://github.com/Hampter-0/AeroStat" target="_blank" rel="noopener">
+        GitHub
+        <svg class="external" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9v4H3V5h4"/></svg>
+      </a>
+    </nav>
+
+    <div class="command">
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <code id="command">docker compose <span class="keep">--profile postgres</span> <span class="keep">up -d</span></code>
+      <button type="button" class="copy" id="copy" aria-label="Copy the command">
+        <svg class="copy-icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg>
+        <svg class="done-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>
+      </button>
+    </div>
+    <p class="hint">Needs the two files from the <a href="https://docs.aerostatus.nl">install guide</a> first.</p>
+
+    <ul class="badges" aria-label="Highlights">
+      <li>Self-hosted</li>
+      <li>MIT licensed</li>
+      <li>Docker for amd64 and arm64</li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 AeroStat</span>
+    <a href="https://github.com/Hampter-0/AeroStat/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+    <a href="https://github.com/Hampter-0/AeroStat/releases" target="_blank" rel="noopener">Releases</a>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
