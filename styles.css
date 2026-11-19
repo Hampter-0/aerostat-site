@@ -1,17 +1,17 @@
 :root {
     color-scheme: dark;
-    --bg: #111317;
-    --panel: #181b21;
-    --border: #2a2f38;
-    --text: #f2f4f7;
-    --text-soft: #c3c9d3;
-    --muted: #8b939f;
+    --bg: #10121e;
+    --panel: #161827;
+    --field: #222432;
+    --hover: #2a2c3b;
+    --border: #2e303d;
+    --text: #e4e4e7;
+    --text-soft: #d4d4d8;
+    --muted: #9f9fa9;
     --accent: #1678c2;
     --accent-text: #ffffff;
     --brand: #56c7e4;
-    --button: #e9edf2;
-    --button-text: #111317;
-    --green: #2ea043;
+    --green: #22c55e;
 }
 
 * {
@@ -70,7 +70,7 @@ h1 {
 .highlight {
     display: inline-block;
     padding: 0.04em 0.16em 0.18em;
-    border-radius: 4px;
+    border-radius: 8px;
     color: var(--accent-text);
     background: var(--accent);
     line-height: 1.2;
@@ -98,9 +98,10 @@ h1 {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-soft);
+    background: var(--field);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -108,18 +109,19 @@ h1 {
 }
 
 .button:hover {
-    border-color: var(--border);
-    background: var(--panel);
+    color: var(--text);
+    background: var(--hover);
 }
 
 .button.primary {
-    color: var(--button-text);
-    background: var(--button);
+    border-color: var(--accent);
+    color: var(--accent-text);
+    background: var(--accent);
 }
 
 .button.primary:hover {
-    border-color: transparent;
-    opacity: 0.9;
+    background: var(--accent);
+    filter: brightness(1.1);
 }
 
 .button:focus-visible,
@@ -148,7 +150,7 @@ h1 {
     align-items: center;
     gap: 10px;
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 12px;
     background: var(--panel);
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-size: 14px;
@@ -175,7 +177,7 @@ h1 {
     display: grid;
     place-items: center;
     border: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     color: var(--muted);
     background: none;
     cursor: pointer;
@@ -183,7 +185,7 @@ h1 {
 
 .copy:hover {
     color: var(--text);
-    background: var(--border);
+    background: var(--field);
 }
 
 .copy svg {
@@ -236,7 +238,7 @@ h1 {
     align-items: center;
     gap: 8px;
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 8px;
     color: var(--text-soft);
     background: var(--panel);
     font-size: 13px;
